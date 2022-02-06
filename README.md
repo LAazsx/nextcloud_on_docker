@@ -13,7 +13,10 @@ Onlyoffice and Collabora work only on a x86_64 server because there are no ARM(6
 ## Preparation
 
 Mount the  drive automatically
-Get the UUID of the partition witht the command ```sudo blkid```. Usually identified by /dev/sdb2
+Get the UUID of the partition witht the command. (Usually identified by /dev/sdb2)
+```
+sudo blkid
+```
 
 Create the mounting point 
 ``` 
@@ -31,7 +34,7 @@ Add the following line at the bottom
 ```
 To test, run the command: 
 ```
-sudo moount -a
+sudo mount -a
 ```
 If there are no errors, you can use the command to check that the volume as been mounted to /media/nextcloud
 
