@@ -12,6 +12,30 @@ Onlyoffice and Collabora work only on a x86_64 server because there are no ARM(6
 
 ## Preparation
 
+Mount the  drive automatically
+Get the UUID of the partition witht the command ```sudo blkid```. Usually identified by /dev/sdb2
+
+Create the mounting point 
+``` 
+ sudo mkdir /media/nextcloud/
+```
+
+Update fstab to load the drive on boot
+```
+   sudo nano /etc/fstab
+```
+
+Add the following line at the bottom
+```
+/dev/disk/by-uuid/<uuid> /media/nextcloud auto nosuid,nodev,noerror 0 0
+```
+To test, run the command: 
+```
+sudo moount -a
+```
+If there are no errors, you can use the command to check that the volume as been mounted to /media/nextcloud
+
+
 Install [Ansible](https://www.ansible.com/) and some needed tools by running the following command with a user that can sudo or is root. 
 ```bash
 curl -s https://raw.githubusercontent.com/reinernippes/nextcloud_on_docker/master/prepare_system.sh | /bin/bash
