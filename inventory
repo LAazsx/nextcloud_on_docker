@@ -14,7 +14,7 @@ ssl_cert_email              = administrator@scaleupsolutions.ph
 ### Nextcloud variables ###
 
 # Choose a directory for your Nextcloud data.
-nextcloud_base_dir          = / mnt/nextcloud
+nextcloud_base_dir          = /media/nextcloud/data
 
 # Choose a username and password for your Nextcloud admin user.
 nextcloud_admin             = 'admin'
@@ -61,7 +61,7 @@ aws_s3_secret         = ''
 # aws_s3_use_path_style = 'true'
 
 # Install restic backup tool if restic_repo is not empty
-restic_repo                 = '/mnt/nextcloud/backups'              # e.g. /var/nc-backup
+restic_repo                 = '/media/nextcloud/backups'              # e.g. /var/nc-backup
 # crontab settings restic for restic
 backup_day                  = *
 backup_hour                 = 4
