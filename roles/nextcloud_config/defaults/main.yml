@@ -5,7 +5,7 @@ nextccloud_system_config:
   - "overwrite.cli.url --value=https://{{ nextcloud_server_fqdn }}"
   - "trusted_domains 0 --value={{ nextcloud_server_fqdn }}"
   - "trusted_domains 1 --value=nginx"
-  - "trusted_proxies 0 serv-arr.scaleupsolutions.ph"
+#  - "trusted_proxies 0 serv-arr.scaleupsolutions.ph"
   - "redis host --value='redis'"
   - "redis port --value='6379' --type=integer"
   - "redis timeout --value='0' --type=integer"
