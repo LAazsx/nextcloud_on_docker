@@ -12,8 +12,8 @@
 - name: docker dockerproxy
   include_tasks: dockerproxy.yml
 
-- name: docker traefik
-  include_tasks: traefik.yml
+#- name: docker traefik
+#  include_tasks: traefik.yml
 
 - name: docker portainer
   include_tasks: portainer.yml
