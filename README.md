@@ -12,6 +12,9 @@ Onlyoffice and Collabora work only on a x86_64 server because there are no ARM(6
 
 ## Preparation
 
+Format the drive
+sudo mkdir /dev/sdb
+
 Mount the  drive automatically
 Get the UUID of the partition witht the command. (Usually identified by /dev/sdb2)
 ```
